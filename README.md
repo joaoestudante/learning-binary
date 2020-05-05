@@ -25,13 +25,13 @@ A new word can only be generated after getting the previous one right.
 
 The student also has access to a tab with more info regarding numeration, binary, among other subjects.
 
-[!student-info](https://user-images.githubusercontent.com/5713037/81112013-e0fd4000-8f15-11ea-8c79-f57d5a41e2bd.png)
+![student-info](https://user-images.githubusercontent.com/5713037/81112013-e0fd4000-8f15-11ea-8c79-f57d5a41e2bd.png)
 
 ### Teacher's interface
 
 This interface is meant for teachers to generate tables to eventually share with students, to ease the explanation of how binary works.
 
-[!teacher-interface](https://user-images.githubusercontent.com/5713037/81112053-fa05f100-8f15-11ea-9263-d53ae6b2d825.png)
+![teacher-interface](https://user-images.githubusercontent.com/5713037/81112053-fa05f100-8f15-11ea-9263-d53ae6b2d825.png)
 
 
 # Roadmap
