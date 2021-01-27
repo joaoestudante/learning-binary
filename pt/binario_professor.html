@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Palavra Binário</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <section class="section">
+      <div class="container has-text-centered">
+        <div class="columns is-centered">
+          <div class="column is-half">
+            <input
+              class="input"
+              id="input-word"
+              type="text"
+              placeholder="Escreva uma palavra"
+            />
+          </div>
+          <div class="column is-half">
+            <button
+              class="button is-primary is-centered"
+              id="generate"
+              onclick="generateTable('professor')"
+            >
+              Gerar tabela
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="generated-word-section">
+      <div class="container has-text-centered">
+        <h1 class="title">Palavra escrita:</h1>
+        <h3 id="generated-word"></h3>
+      </div>
+    </section>
+    <section class="section" id="generated-image-section" style="padding: 0;">
+      <div class="container has-text-centered">
+        <table class="table is-centered is-bordered">
+          <thead>
+            <tr>
+              <th>Letra</th>
+              <th style="border-width: 0px;"></th>
+              <th>32</th>
+              <th>16</th>
+              <th>8</th>
+              <th>4</th>
+              <th>2</th>
+              <th>1</th>
+            </tr>
+          </thead>
+          <tbody id="binary-table" style="padding-top: 500pt;"></tbody>
+        </table>
+      </div>
+    </section>
+    <section class="section">
+      <h1 class="title">Licença</h1>
+      <img src="images/license.jpg" width="200pt" />
+      <p>
+        Distribuído sobre a licença
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">
+          Creative Commons <b>by-nc-sa</b> 4.0</a
+        >
+      </p>
+    </section>
+    <script>
+      // Allow input submission with the enter key
+      var input = document.getElementById("input-word");
+      input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+          event.preventDefault();
+          document.getElementById("generate").click();
+        }
+      });
+    </script>
+    <script src="js/professor.js"></script>
+    <script src="js/common.js"></script>
+
+    <style>
+      .table {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      tbody:before {
+        content:"@";
+        display:block;
+        line-height:15px;
+        text-indent:-99999px;
+      }
+
+    </style>
+  </body>
+</html>
