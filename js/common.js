@@ -6,6 +6,8 @@ function buildBinaryTable(word, asker) {
         var row = table.insertRow();
         var empty_cell = row.insertCell();
         empty_cell.style = "padding:0";
+        var padding_cell = row.insertCell();
+        padding_cell.style = "border-width:0px;"
         if (asker == "professor")
             empty_cell.innerHTML =
                 "<div style='background: #ffffff; width:40pt; height:30pt'></div>";
