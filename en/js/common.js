@@ -1,19 +1,25 @@
 function buildBinaryTable(word, asker) {
     var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÕÊÁÂÓÉÀÔÍ";
     var table = document.getElementById("binary-table");
-    for (character of word) {
+    console.log("word: " + word);
+    for (character of word.substring(0, word.length - 1)) {
         var index = letters.indexOf(character) + 1;
+        console.log("index of " + character + ": " + index);
         var row = table.insertRow();
-        var empty_cell = row.insertCell();
-        empty_cell.style = "padding:0";
-        var padding_cell = row.insertCell();
-        padding_cell.style = "border-width:0px;"
-        if (asker == "professor")
+
+        if (asker == "professor") {
+            var empty_cell = row.insertCell();
+            empty_cell.style = "padding:0";
+            var padding_cell = row.insertCell();
+            padding_cell.style = "border-width:0px;"
             empty_cell.innerHTML =
                 "<div style='background: #ffffff; width:40pt; height:30pt'></div>";
-        else if (asker == "estudante")
+        } else if (asker == "estudante") {
+            var empty_cell = row.insertCell();
+            empty_cell.style = "padding:0";
             empty_cell.innerHTML =
                 "<input class='input char' maxlength=1 style='width: 46pt !important'>";
+        }
 
         binaryStr = index.toString(2);
         if (binaryStr.length < 6) {

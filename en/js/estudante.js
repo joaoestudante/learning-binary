@@ -41,10 +41,13 @@ function togglePlaying() {
 function validateGuess() {
 	var inputs = document.getElementsByClassName("char");
 	var correct_word = document.getElementById("word").innerHTML;
+	correct_word = correct_word.substring(0, correct_word.length - 1);
 	var guess = "";
 	for (input of inputs) {
 		guess += input.value;
 	}
+	console.log("guess is: " + guess.length);
+	console.log("word is: " + correct_word.length);
 	if (guess.toUpperCase() === correct_word) {
 		document.getElementById("confirm").style.display = "none";
 		document.getElementById("result-right").style.display = "inline";

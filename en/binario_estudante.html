@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Palavra Binário - Estudante</title>
+    <title>Binary words - student</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
@@ -18,12 +18,12 @@
       <ul>
         <li class="is-active">
           <a>
-            <span>Jogo</span>
+            <span>Game</span>
           </a>
         </li>
         <li>
           <a href="binario_estudante_informacoes.html">
-            <span>Informações</span>
+            <span>Information</span>
           </a>
         </li>
       </ul>
@@ -52,7 +52,7 @@
                     <i class="fas fa-upload"></i>
                   </span>
                   <span class="file-label">
-                    Escolher ficheiro palavras.txt...
+                    Choose a words.txt file...
                   </span>
                 </span>
               </label>
@@ -63,7 +63,7 @@
               onclick="generateTable('estudante')"
               style="display:none"
             >
-              Gerar nova palavra!
+              Generate new word!
             </button>
           </div>
           <div class="column is-one-third">
@@ -83,7 +83,7 @@
       style="display: none; padding: 0pt;"
     >
       <div class="container has-text-centered">
-        <h3>Escreve uma letra em cada linha da tabela!</h3>
+        <h3>Type a letter in each table row!</h3>
       </div>
     </section>
 
@@ -95,8 +95,8 @@
       <div class="container has-text-centered">
         <div class="container">
           <div class="column is-narrow">
-            <span class="tag is-success" id="correct">0 acertadas</span>
-            <span class="tag is-danger" id="wrong">0 erradas</span>
+            <span class="tag is-success" id="correct">0 correct</span>
+            <span class="tag is-danger" id="wrong">0 wrong</span>
           </div>
         </div>
         <div class="container has-text-centered">
@@ -105,7 +105,7 @@
               <table class="table is-bordered">
                 <thead>
                   <tr>
-                    <th>Letra</th>
+                    <th>Letter</th>
                     <th>32</th>
                     <th>16</th>
                     <th>8</th>
@@ -127,13 +127,13 @@
                 id="confirm"
                 onclick="validateGuess()"
               >
-                Confirmar
+                Confirm
               </button>
               <h1 class="title" id="result-wrong" style="display: none;">
-                Ainda não foi desta... 🙁
+                You haven't yet found the word... 🙁
               </h1>
               <h1 class="title" id="result-right" style="display: none;">
-                Acertaste! Podes jogar novamente.
+                You got it! You may play again by clicking "Generate new word".
               </h1>
             </div>
           </div>
