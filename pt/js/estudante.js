@@ -41,6 +41,8 @@ function togglePlaying() {
 function validateGuess() {
 	var inputs = document.getElementsByClassName("char");
 	var correct_word = document.getElementById("word").innerHTML;
+	correct_word = correct_word.substring(0, correct_word.length - 1);
+
 	var guess = "";
 	for (input of inputs) {
 		guess += input.value;

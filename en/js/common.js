@@ -1,10 +1,8 @@
 function buildBinaryTable(word, asker) {
     var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÕÊÁÂÓÉÀÔÍ";
     var table = document.getElementById("binary-table");
-    console.log("word: " + word);
     for (character of word.substring(0, word.length - 1)) {
         var index = letters.indexOf(character) + 1;
-        console.log("index of " + character + ": " + index);
         var row = table.insertRow();
 
         if (asker == "professor") {

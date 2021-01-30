@@ -46,8 +46,6 @@ function validateGuess() {
 	for (input of inputs) {
 		guess += input.value;
 	}
-	console.log("guess is: " + guess.length);
-	console.log("word is: " + correct_word.length);
 	if (guess.toUpperCase() === correct_word) {
 		document.getElementById("confirm").style.display = "none";
 		document.getElementById("result-right").style.display = "inline";
