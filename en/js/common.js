@@ -1,5 +1,5 @@
 function buildBinaryTable(word, asker) {
-    var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÕÊÁÂÓÉÀÔÍ";
+    var letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZÇÃÕÊÁÂÓÉÀÔÍÚÄÅÆÈËÌÍÎÏÑÒÖØÙÛÜÝßŸČĆŠŽŘ";
     var table = document.getElementById("binary-table");
     for (character of word.substring(0, word.length - 1)) {
         var index = letters.indexOf(character) + 1;
