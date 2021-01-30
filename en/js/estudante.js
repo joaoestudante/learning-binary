@@ -67,14 +67,14 @@ function increaseCorrect() {
 		increaseCorrect.correct = 0;
 	increaseCorrect.correct += 1;
 	document.getElementById("correct").innerHTML =
-		increaseCorrect.correct + " acertadas";
+		increaseCorrect.correct + " correct";
 }
 
 function increaseWrong() {
 	if (typeof increaseWrong.wrong == "undefined") increaseWrong.wrong = 0;
 	increaseWrong.wrong += 1;
 	document.getElementById("wrong").innerHTML =
-		increaseWrong.wrong + " erradas";
+		increaseWrong.wrong + " wrong";
 }
 
 function resetGame() {
