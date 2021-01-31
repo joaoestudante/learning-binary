@@ -29,6 +29,8 @@
       </ul>
     </div>
     <section class="section" style="padding-bottom: 0pt;">
+      <h6 class="subtitle is-6 ml-4">Hover over the images to see them in a larger size.</h6>
+
       <div class="container has-text-centered">
         <div class="columns is-centered">
           <div class="column is-one-third">
@@ -36,17 +38,20 @@
               class="is-pulled-right"
               src="images/binary_key_1.JPG"
               style="padding: 0pt 20pt 20pt 20pt;"
+              id="img1"
             />
           </div>
           <div class="column is-one-third">
             <img
             src="images/binary_key_2.JPG"
-          />
+            id="img2"
+            />
           </div>
           <div class="column is-one-third">
             <img
               class="is-pulled-left"
               src="images/binary_key_3.JPG"
+              id="img3"
             />
           </div>
         </div>
@@ -152,6 +157,15 @@
       .table {
         margin-left: auto;
         margin-right: auto;
+      }
+      #img1:hover {
+        transform: scale(2) translateX(25%);
+      }
+      #img2:hover {
+        transform: scale(2)
+      }
+      #img3:hover {
+        transform: scale(2) translateX(-25%);
       }
     </style>
   </body>
