@@ -1,5 +1,5 @@
 # Learning Binary
-This is an educational resource, submitted to Casa das Ciências, to foster the learning of the binary notation by young students. The content is in Portuguese.
+This is an educational resource, submitted to Science in School, to foster the learning of the binary notation by young students.
 
 ## How it works
 The project is divided in 2 main files: [the student's interface](student.html), and the [teacher's interface](teacher.html). Both are self contained HTML pages, with no need to download extra software manually - everything runs in the browser.
