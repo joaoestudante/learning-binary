@@ -29,6 +29,20 @@ cards[5].addEventListener( 'click', function() {
     var matching_digit = document.getElementById('numbers-5');
     matching_digit.innerText = (parseInt(matching_digit.innerText) + 1) % 2;
 });
+window.onload = (event) => {
+    const checkbox = document.querySelector('#letter-toggle');
+
+    checkbox.addEventListener('change', function() { // do this on load
+        if (this.checked) {
+            for (var d of document.getElementsByClassName('letter-wrap')) {
+                d.style.visibility = "visible";
+            }
+        } else {
+            for (var d of document.getElementsByClassName('letter-wrap'))
+                d.style.visibility = "hidden";
+        }
+        });
+};
 
 function calculateShowResult() {
     // Sum binary
@@ -48,11 +62,11 @@ function calculateShowResult() {
         result_letter = "No matching letter"
     }
     document.getElementById("result-letter").innerText = result_letter;
-    document.getElementsByClassName("result-values")[0].style.visibility = "visible";
+    document.getElementsByClassName("result-values")[0].style.display = "flex";
     document.getElementsByClassName("result-show-button")[1].disabled = false;
 }
 
 function hideResult() {
-    document.getElementsByClassName("result-values")[0].style.visibility = "hidden";
+    document.getElementsByClassName("result-values")[0].style.display = "none";
     document.getElementsByClassName("result-show-button")[1].disabled = true;
 }

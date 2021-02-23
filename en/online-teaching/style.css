@@ -89,8 +89,8 @@ img {
 
 .result-values {
     grid-row: 4;
-    display: flex;
-    visibility:hidden;
+    display: none;
+
     justify-content: center;
     margin-top: 20pt;
 }
@@ -103,4 +103,8 @@ img {
     text-align: center;
     justify-items: center;
     justify-content: center;
+}
+
+.letter-wrap {
+    visibility: hidden;
 }
